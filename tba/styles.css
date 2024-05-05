@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header, nav, footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #20232a;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    background-color: #61dafb;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* Dark theme specific styles */
+body.dark-theme {
+    background-color: #333;
+    color: #ccc;
+}
+
+body.dark-theme nav, body.dark-theme header, body.dark-theme footer {
+    background-color: #20232a;
+    color: white;
+}
